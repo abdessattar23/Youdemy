@@ -19,6 +19,11 @@ class Route{
         self::addRoute('POST', $route, $callback);
     }
 
+    public static function delete($route, $callback)
+    {
+        self::addRoute('DELETE', $route, $callback);
+    }
+
    
 
     private static function addRoute($method, $route, $callback)
